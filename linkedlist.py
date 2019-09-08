@@ -10,7 +10,7 @@ class linkedlist:
     def __init__(self):
         self.head = None
 
-    def printlinkedlist(self):
+    def printlinkedlist(self) -> object:
         temp = self.head
         while temp:
             print(temp.data)
