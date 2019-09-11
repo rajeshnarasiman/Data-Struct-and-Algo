@@ -1,26 +1,27 @@
 #Node initiation
-class Node:
-    def __init__(self,data):
-        self.data = data
-        self.next = None
+class object:
+    class Node:
+        def __init__(self,data):
+            self.data = data
+            self.next = None
 
-#creating linked list
-class linkedlist:
+    #creating linked list
+    class linkedlist:
 
-    def __init__(self):
-        self.head = None
+        def __init__(self):
+            self.head = None
 
-    def push(self, new_data):
-        new_node = Node(new_data)
-        new_node.next = self.head
-        self.head = new_node
+        def push(self, new_data):
+            new_node = Node(new_data)
+            new_node.next = self.head
+            self.head = new_node
 
-    def print_middle_val(self):
-        slow = fast = self.head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-        return slow.data
+        def print_middle_val(self):
+            slow = fast = self.head
+            while fast and fast.next:
+                slow = slow.next
+                fast = fast.next.next
+            return slow.data
 
 
 # Driver code:
